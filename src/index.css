@@ -1,0 +1,46 @@
+@import 'tailwindcss';
+
+@layer components {
+  .slide-markdown :where(h1) {
+    @apply text-3xl font-bold tracking-tight text-slate-900 dark:text-slate-100 mb-4 mt-1;
+  }
+  .slide-markdown :where(h2) {
+    @apply text-2xl font-semibold text-slate-800 dark:text-slate-200 mb-3 mt-6;
+  }
+  .slide-markdown :where(h3) {
+    @apply text-xl font-semibold text-slate-800 dark:text-slate-200 mb-2 mt-4;
+  }
+  .slide-markdown :where(p) {
+    @apply text-slate-700 dark:text-slate-300 mb-3 leading-relaxed;
+  }
+  .slide-markdown :where(ul, ol) {
+    @apply my-3 pl-6 text-slate-700 dark:text-slate-300 space-y-1;
+  }
+  .slide-markdown :where(li) {
+    @apply leading-relaxed;
+  }
+  .slide-markdown :where(a) {
+    @apply text-indigo-600 dark:text-indigo-400 underline underline-offset-2;
+  }
+  .slide-markdown :where(code) {
+    @apply rounded bg-slate-100 dark:bg-slate-800 px-1.5 py-0.5 text-sm font-mono text-slate-800 dark:text-slate-200;
+  }
+  .slide-markdown :where(pre) {
+    @apply rounded-lg bg-slate-900 text-slate-100 p-4 overflow-x-auto text-sm my-4;
+  }
+  .slide-markdown :where(pre code) {
+    @apply bg-transparent p-0 text-inherit;
+  }
+  .slide-markdown :where(blockquote) {
+    @apply border-l-4 border-indigo-400 pl-4 italic text-slate-600 dark:text-slate-400 my-4;
+  }
+  .slide-markdown :where(table) {
+    @apply w-full text-sm border-collapse my-4;
+  }
+  .slide-markdown :where(th, td) {
+    @apply border border-slate-200 dark:border-slate-700 px-3 py-2 text-left;
+  }
+  .slide-markdown :where(th) {
+    @apply bg-slate-100 dark:bg-slate-800 font-semibold;
+  }
+}
